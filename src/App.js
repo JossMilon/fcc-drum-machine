@@ -22,24 +22,24 @@ function App() {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [display]);
+  }, []);
   return (
     <div className="container">
       <div id="drum-machine">
         <div id="display">{display}</div>
         <div id="drum-pads">
-          <Pad setDisplay={setDisplay} keyPressed={keyPressed} id="Work it" keyCode="81" sound={sound1} />
-          <Pad setDisplay={setDisplay} keyPressed={keyPressed} id="Make it" keyCode="87" sound={sound2} />
-          <Pad setDisplay={setDisplay} keyPressed={keyPressed} id="Do it" keyCode="69" sound={sound3} />
-          <Pad setDisplay={setDisplay} keyPressed={keyPressed} id="Makes us" keyCode="65" sound={sound4} />
-          <Pad setDisplay={setDisplay} keyPressed={keyPressed} id="Harder" keyCode="83" sound={sound5} />
-          <Pad setDisplay={setDisplay} keyPressed={keyPressed} id="Better" keyCode="68" sound={sound6} />
-          <Pad setDisplay={setDisplay} keyPressed={keyPressed} id="Faster" keyCode="90" sound={sound7} />
-          <Pad setDisplay={setDisplay} keyPressed={keyPressed} id="Stronger" keyCode="88" sound={sound7} />
-          <Pad setDisplay={setDisplay} keyPressed={keyPressed} id="More than" keyCode="67" sound={sound7} />
-          <Pad setDisplay={setDisplay} keyPressed={keyPressed} id="Faster" keyCode="90" sound={sound7} />
-          <Pad setDisplay={setDisplay} keyPressed={keyPressed} id="Stronger" keyCode="88" sound={sound7} />
-          <Pad setDisplay={setDisplay} keyPressed={keyPressed} id="More than" keyCode="67" sound={sound7} />
+          <Pad setDisplay={setDisplay} keyPressed={keyPressed} setKeyPressed={setKeyPressed} id="Work it" keyCode="65" sound={sound1} />
+          <Pad setDisplay={setDisplay} keyPressed={keyPressed} setKeyPressed={setKeyPressed} id="Make it" keyCode="90" sound={sound2} />
+          <Pad setDisplay={setDisplay} keyPressed={keyPressed} setKeyPressed={setKeyPressed} id="Do it" keyCode="69" sound={sound3} />
+          <Pad setDisplay={setDisplay} keyPressed={keyPressed} setKeyPressed={setKeyPressed} id="Makes us" keyCode="82" sound={sound4} />
+          <Pad setDisplay={setDisplay} keyPressed={keyPressed} setKeyPressed={setKeyPressed} id="Harder" keyCode="81" sound={sound5} />
+          <Pad setDisplay={setDisplay} keyPressed={keyPressed} setKeyPressed={setKeyPressed} id="Better" keyCode="83" sound={sound6} />
+          <Pad setDisplay={setDisplay} keyPressed={keyPressed} setKeyPressed={setKeyPressed} id="Faster" keyCode="68" sound={sound7} />
+          <Pad setDisplay={setDisplay} keyPressed={keyPressed} setKeyPressed={setKeyPressed} id="Stronger" keyCode="70" sound={sound7} />
+          <Pad setDisplay={setDisplay} keyPressed={keyPressed} setKeyPressed={setKeyPressed} id="More than" keyCode="87" sound={sound7} />
+          <Pad setDisplay={setDisplay} keyPressed={keyPressed} setKeyPressed={setKeyPressed} id="Faster" keyCode="88" sound={sound7} />
+          <Pad setDisplay={setDisplay} keyPressed={keyPressed} setKeyPressed={setKeyPressed} id="Stronger" keyCode="67" sound={sound7} />
+          <Pad setDisplay={setDisplay} keyPressed={keyPressed} setKeyPressed={setKeyPressed} id="More than" keyCode="86" sound={sound7} />
         </div>
       </div>
     </div>
