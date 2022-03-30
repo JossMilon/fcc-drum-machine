@@ -1,17 +1,11 @@
-const Pad = ({setDisplay, keyPressed, setKeyPressed, id, keyCode, sound}) => {
+const Pad = ({setDisplay, padName, sound}) => {
     const handleClick = (e) => {
         e.target.children[0].play();
-        setDisplay(id);
-    };
-    if (keyPressed===Number(keyCode)) {
-        setKeyPressed("");
-        const audio = new Audio(sound);
-        audio.play();
-        setDisplay(id);
+        setDisplay(padName);
     };
     return (
-        <button onClick={handleClick} id={id} className="drum-pad">
-        {id}
+        <button onClick={handleClick} className="drum-pad">
+        {padName}
         <audio src={sound}></audio>
         </button>
     )
